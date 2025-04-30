@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond the Boundaries: Music, Resistance, and HK Bicultural Echoes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-100 text-slate-700">
+
+    <header class="bg-slate-900 text-slate-100 sticky top-0 z-50 shadow-lg" role="banner">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex flex-wrap justify-between items-center" role="navigation" aria-label="Main navigation">
+            <div class="flex items-center">
+                <img src="materials/beyond2 Large.jpeg"
+                     alt="Beyond Legacy Logo"
+                     class="mr-3 image-loading rounded-full object-cover"
+                     width="50"
+                     height="50"
+                     loading="eager"
+                     onload="this.classList.remove('image-loading')">
+                <div class="text-2xl font-bold tracking-tight text-white">Beyond Legacy</div>
+            </div>
+            <button id="nav-toggle"
+                    class="md:hidden focus:outline-none focus:ring-2 focus:ring-amber-500 p-2 rounded-md text-slate-300 hover:text-white hover:bg-slate-700 transition duration-150 ease-in-out"
+                    aria-expanded="false"
+                    aria-controls="nav-content"
+                    aria-label="Toggle navigation menu">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                </svg>
+            </button>
+            <div id="nav-content"
+                 class="w-full md:w-auto md:flex hidden mt-3 md:mt-0 bg-slate-800 md:bg-transparent rounded-md p-4 transition-all duration-300 ease-in-out"
+                 role="menu"
+                 aria-labelledby="nav-toggle">
+                <ul class="flex flex-col md:flex-row md:items-center md:space-x-6 lg:space-x-8 space-y-3 md:space-y-0 text-base lg:text-lg font-medium">
+                    <li><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                    <li><a href="#band-history" class="nav-link" role="menuitem">The Band</a></li>
+                    <li><a href="#timeline" class="nav-link" role="menuitem">Timeline</a></li>
+                    <li><a href="#songs" class="nav-link" role="menuitem">Songs</a></li>
+                    <li><a href="#diaspora" class="nav-link" role="menuitem">Diaspora</a></li>
+                    <li><a href="#gallery" class="nav-link" role="menuitem">Gallery</a></li>
+                    <li><a href="#author-note" class="nav-link" role="menuitem">Author's Note</a></li>
+                    <li><a href="#references" class="nav-link" role="menuitem">References</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 py-12 md:py-16">
+
+        <section id="home" class="scroll-mt-20 content-section slide-in-up">
+            <div class="section-card p-8 md:p-12 lg:p-16">
+                <div class="hero-image-container">
+                    <img src="materials/beyondconcert Large.jpeg"
+                         alt="Beyond performing live in concert"
+                         class="hero-image image-loading"
+                         onload="this.classList.remove('image-loading')">
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+                    Beyond the Boundaries: <span class="highlight">Music, Resistance, and Hong Kong's Bicultural Echoes in the USA</span>
+                </h1>
+                <div class="text-content space-y-5 text-lg">
+                    <p>
+                        Welcome. This project explores the enduring legacy of Beyond (Beyond 樂隊), the iconic Hong Kong rock band whose music became synonymous with a generation's aspirations for freedom and cultural identity. While deeply rooted in Hong Kong's unique socio-political landscape—navigating British colonialism, Chinese influence, and local consciousness—Beyond's anthems like <strong class="text-indigo-600">"Glorious Years" (光輝歲月)</strong> and <strong class="text-indigo-600">"Under a Vast Sky" (海闊天空)</strong> have transcended borders.
+                    </p>
+                    <p>
+                        We delve into how Beyond's music articulated resistance and shaped Hong Kong identity, and critically, how this legacy resonates within the <strong>Hong Kong diaspora in the United States</strong>. This project examines Beyond not just as musicians, but as cultural figures whose work provides a lens into the complexities of <strong>biculturalism</strong>, identity negotiation, and the expression of political sentiment from afar, connecting directly to the themes of "Bilingual and Bicultural Experiences in the USA."
+                    </p>
+                </div>
+            </div>
+            <hr class="border-slate-200 my-8">
+        </section>
+        <hr class="border-slate-200 my-8">
+        
+                <section id="band-history" class="scroll-mt-20 content-section slide-in-left">
+                    <div class="section-card p-8 md:p-10 lg:p-12">
+                        <h2 class="section-title">The Band: Hong Kong's Voice</h2>
+                        <div class="space-y-5 text-content">
+                             <p><strong>Formation (1983):</strong> Emerged during a pivotal time in Hong Kong under British rule, challenging the dominance of mainstream Cantopop with their rock sound and socially conscious lyrics. Their music offered an alternative voice, reflecting local concerns and aspirations (Chu, 2017).</p>
+                            <p><strong>Rise to Fame:</strong> Albums like <em>Secret Police</em> (秘密警察, 1988) and <em>Deliberate</em> (猶豫, 1991) cemented their status. Their participation in events like the 1989 Concert for Democracy in China highlighted their political engagement.</p>
+                            <p><strong>Wong Ka-kui's Untimely Death (1993):</strong> The tragic accident that claimed the lead vocalist's life marked a profound moment, transforming him into a cultural icon and martyr figure for many. His death is often seen as a symbolic moment for Hong Kong's own uncertain future (Chu, 2017).</p>
+                            <p><strong>Post-1993 and Diaspora:</strong> The band continued, but Ka-kui's absence was deeply felt. As Hong Kongers emigrated, particularly to countries like the US and Canada especially after political shifts (e.g., 1997 handover, 2019 protests, 2020 NSL), Beyond's music traveled with them, becoming a nostalgic and often defiant symbol of Hong Kong identity abroad. The 40th-anniversary concert (2023) reignited interest and reflection, both in HK and within diaspora communities.</p>
+                        </div>
+                    </div>
+                </section>
+                <hr class="border-slate-200 my-8">
+                
+                        <section id="timeline" class="scroll-mt-20 content-section slide-in-right">
+                             <div class="section-card p-8 md:p-10 lg:p-12">
+                                <h2 class="section-title">Soundtrack to History: Political Context Timeline</h2>
+                                <div class="relative border-l-3 border-slate-200 pl-14 space-y-12">
+                                    <div class="timeline-item relative">
+                                        <div class="timeline-connector"></div>
+                                        <h3>1983: Formation</h3>
+                                        <p class="date">British Hong Kong era</p>
+                                        <p class="text-content">Beyond forms as a garage band, challenging Cantopop norms with their rock sound.</p>
+                                    </div>
+                                    <div class="timeline-item relative">
+                                        <div class="timeline-connector"></div>
+                                        <h3>1988: Breakthrough</h3>
+                                        <p class="date">Release of "Secret Police"</p>
+                                        <p class="text-content">Album 秘密警察 establishes Beyond's socially conscious voice.</p>
+                                    </div>
+                                    <div class="timeline-item relative">
+                                        <div class="timeline-connector"></div>
+                                        <h3>1989: Tiananmen & "The Great Wall"</h3>
+                                        <p class="date">Concert for Democracy in China</p>
+                                        <p class="text-content">Release "The Great Wall" (長城), critiquing authoritarianism.</p>
+                                        <p class="diaspora-note">Diaspora Connection: Song becomes rallying point for overseas Chinese students.</p>
+                                    </div>
+                                    <div class="timeline-item relative">
+                                        <div class="timeline-connector"></div>
+                                        <h3>1991: "Glorious Years"</h3>
+                                        <p class="date">Release of 光輝歲月</p>
+                                        <p class="text-content">Tribute to Nelson Mandela becomes metaphor for freedom struggles.</p>
+                                        <p class="diaspora-note">Diaspora Connection: Song resonates with civil rights movements globally.</p>
+                                    </div>
+                                    <div class="timeline-item relative">
+                                        <div class="timeline-connector"></div>
+                                        <h3>1993: "Under a Vast Sky" & Loss</h3>
+                                        <p class="date">Release of 海闊天空 & Wong Ka-kui's death</p>
+                                        <p class="text-content">Iconic song released; Ka-kui's tragic accident in Japan.</p>
+                                        <p class="diaspora-note">Diaspora Connection: Memorial concerts held worldwide.</p>
+                                    </div>
+                                    <div class="timeline-item relative">
+                                        <div class="timeline-connector"></div>
+                                        <h3>1997: Handover</h3>
+                                        <p class="date">Hong Kong returns to Chinese sovereignty</p>
+                                        <p class="text-content">Beyond's songs gain new political significance.</p>
+                                        <p class="diaspora-note">Diaspora Connection: First major wave of HK emigration.</p>
+                                    </div>
+                                    <div class="timeline-item relative">
+                                        <div class="timeline-connector"></div>
+                                        <h3>2014: Umbrella Movement</h3>
+                                        <p class="date">Pro-democracy protests</p>
+                                        <p class="text-content">"Under a Vast Sky" emerges as protest anthem.</p>
+                                        <p class="diaspora-note">Diaspora Connection: Global solidarity movements adopt song.</p>
+                                    </div>
+                                     <div class="timeline-item relative">
+                                        <div class="timeline-connector"></div>
+                                        <h3>2019: Anti-Extradition Protests</h3>
+                                        <p class="date">Mass demonstrations</p>
+                                        <p class="text-content">"Glorious Years" & "Under a Vast Sky" resurge.</p>
+                                         <p class="diaspora-note">Diaspora Connection: Renewed activism and cultural events in US using the music.</p>
+                                    </div>
+                                     <div class="timeline-item relative">
+                                         <h3>2020 onwards: NSL & Continued Impact</h3>
+                                        <p class="date">National Security Law imposed</p>
+                                        <p class="text-content">Reports of censorship emerge, affecting cultural expression.</p>
+                                         <p class="diaspora-note">Diaspora Connection: Increased advocacy; music as preserved memory/resistance outside HK (HRW, 2024).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <hr class="border-slate-200 my-8">
+                        
+                                <section id="songs" class="scroll-mt-20 content-section slide-in-left">
+                                     <div class="section-card p-8 md:p-10 lg:p-12">
+                                        <h2 class="section-title">Songs of Identity: Analysis & Bicultural Resonance</h2>
+                                        <div class="space-y-12">
+                                            <div class="song-item text-content">
+                                                <h3>"Glorious Years" (光輝歲月 - 1990)</h3>
+                                                <div class="audio-player mb-4">
+                                                    <audio controls class="w-full">
+                                                        <source src="materials/SpotifyMate.com - 光輝歲月 - Beyond.mp3" type="audio/mpeg">
+                                                        Your browser does not support the audio element.
+                                                    </audio>
+                                                </div>
+                                                <p><strong>Literal Meaning:</strong> Tribute to Nelson Mandela and the fight against apartheid.</p>
+                                                <p><strong>Hong Kong Context:</strong> Widely interpreted as an allegory for Hong Kong's own struggle for freedom, autonomy, and recognition against perceived oppression (Ho, 2015). The lyrics speak of colour, struggle, and the hope for a future where ideals are realized.</p>
+                                                <p><strong>Bicultural Resonance (USA):</strong> The song's use of a <em>global</em> icon (Mandela) reflects an outward-looking perspective common in bicultural identities. For the Hong Kong diaspora in the US, its themes of racial struggle and political freedom can resonate with experiences of being a minority, navigating cultural expectations, and connecting to Hong Kong's political situation. It embodies a fight for dignity that transcends specific geography.</p>
+                                            </div>
+                                            <div class="song-item text-content">
+                                                <h3>"Under a Vast Sky" (海闊天空 - 1993)</h3>
+                                                <div class="audio-player mb-4">
+                                                    <audio controls class="w-full">
+                                                        <source src="materials/SpotifyMate.com - 海闊天空 - Beyond.mp3" type="audio/mpeg">
+                                                        Your browser does not support the audio element.
+                                                    </audio>
+                                                </div>
+                                                <p><strong>Meaning:</strong> A powerful anthem about perseverance, facing disillusionment, maintaining ideals, and the pain of pursuing freedom ("Forgive me for being unrestrained and freedom-loving in my life..."). Gained immense poignancy after Wong Ka-kui's death.</p>
+                                                <p><strong>Hong Kong Context:</strong> Became the unofficial anthem of the 2014 Umbrella Movement and subsequent protests, sung collectively in defiance.</p>
+                                                <p><strong>Bicultural Resonance (USA):</strong> For immigrants, lyrics about leaving, facing the unknown ("drifting in a sea of people"), and holding onto dreams can mirror the migration experience. It speaks to being caught between worlds. Singing it collectively in the US is a powerful act of maintaining <strong>bicultural</strong> identity: asserting Hong Kong heritage while living in America.</p>
+                                            </div>
+                                            <div class="song-item text-content">
+                                                <h3>"The Great Wall" (長城 - 1991)</h3>
+                                                <div class="audio-player mb-4">
+                                                    <audio controls class="w-full">
+                                                        <source src="materials/SpotifyMate.com - 長城 - Beyond.mp3" type="audio/mpeg">
+                                                        Your browser does not support the audio element.
+                                                    </audio>
+                                                </div>
+                                                <p><strong>Meaning:</strong> Uses the Great Wall metaphorically to critique closed-mindedness, conformity, and potentially authoritarian control within Chinese culture/politics.</p>
+                                                <p><strong>Hong Kong Context:</strong> Reflected anxieties about mainland China's influence and preserving Hong Kong's distinct cultural identity (Fung, 2016).</p>
+                                                <p><strong>Bicultural Resonance (USA):</strong> Explores the complex relationship with heritage culture. Might resonate with the diaspora's struggle to reconcile pride in Chinese heritage with critiques of the PRC government, a common tension for bicultural individuals navigating cultural assimilation and political identification.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <hr class="border-slate-200 my-8">
+                                
+                                        <section id="diaspora" class="scroll-mt-20 content-section slide-in-right">
+                                             <div class="section-card p-8 md:p-10 lg:p-12">
+                                                <h2 class="section-title">Echoes in the USA: Diaspora & Biculturalism</h2>
+                                                <div class="space-y-5 text-content">
+                                                    <p><strong>Music as a Cultural Anchor:</strong> For many first and second-generation Hong Kong Americans, Beyond's music serves as a vital link to their heritage, language (Cantonese), and cultural memory. It's played at community gatherings, family events, and becomes a shared language across generations.</p>
+                                                    <p><strong>Navigating Bicultural Identity:</strong> Beyond's music often embodies the specific cultural identity of Hong Kong – distinct from mainland China yet globally aware. For Hong Kong Americans juggling identities, the music can validate this unique positioning. It's not just "Chinese" music; it's <em>Hong Kong</em> music, representing a specific bicultural space.</p>
+                                                    <p><strong>Soundtrack for Diaspora Activism:</strong> Following events like the 2014 and 2019 protests, Beyond's anthems became central to solidarity movements organized by the Hong Kong diaspora in the US. Singing "Glorious Years" or "Under a Vast Sky" at rallies in US cities is both political expression and a performance of collective identity <em>within</em> the American context.</p>
+                                                    <p><strong>Language Maintenance:</strong> The prevalence of Cantonese in Beyond's most famous songs supports language maintenance efforts within families and communities in the US, reinforcing a connection to a linguistic heritage.</p>
+                                                    <p><strong>Challenges and Reinterpretation:</strong> As Hong Kong changes under the NSL, the meaning and performance of Beyond's music in the diaspora may also evolve. It becomes not just nostalgic but an act of preservation, carrying meanings perhaps riskier to express openly in Hong Kong itself. This highlights how bicultural experiences are dynamic and responsive to homeland politics.</p>
+                                                    <div class="placeholder-note mt-6">
+                                                        [Potential addition: Include anonymized quotes or summaries from secondary sources/articles discussing the HK diaspora's relationship with the music, if available through further research].
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <hr class="border-slate-200 my-8">
+                                        
+                                                <section id="gallery" class="scroll-mt-20 content-section slide-in-left">
+                                                     <div class="section-card p-8 md:p-10 lg:p-12">
+                                                        <h2 class="section-title">Multimedia Gallery</h2>
+                                                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                                                            <div class="gallery-item aspect-video bg-slate-300" role="img" aria-label="Classic Beyond Photo">
+                                                                <img src="materials/beyond1 Large.jpeg"
+                                                                     alt="Classic Beyond band photo"
+                                                                     class="w-full h-full object-cover image-loading"
+                                                                     loading="lazy"
+                                                                     onload="this.classList.remove('image-loading')">
+                                                                <div class="gallery-caption">Classic Beyond band photo from their early years</div>
+                                                            </div>
+                                                             <div class="gallery-item aspect-video bg-slate-300" role="img" aria-label="Hong Kong Protest Imagery">
+                                                                 <img src="materials/hkprotest Large.jpeg"
+                                                                      alt="Hong Kong protest with Beyond's songs"
+                                                                      class="w-full h-full object-cover image-loading"
+                                                                      loading="lazy"
+                                                                      onload="this.classList.remove('image-loading')">
+                                                                <div class="gallery-caption">Hong Kong protests where Beyond's songs became anthems of resistance</div>
+                                                            </div>
+                                                             <div class="gallery-item aspect-video bg-slate-300" role="img" aria-label="US Diaspora Rally">
+                                                                 <img src="materials/concertfordemocracy.jpg"
+                                                                      alt="Beyond at the 1989 Concert for Democracy in China"
+                                                                      class="w-full h-full object-cover image-loading"
+                                                                      loading="lazy"
+                                                                      onload="this.classList.remove('image-loading')">
+                                                                <div class="gallery-caption">Beyond performing at the historic 1989 Concert for Democracy in China</div>
+                                                            </div>
+                                                             <div class="gallery-item aspect-video bg-slate-300" role="img" aria-label="Album Art">
+                                                                 <img src="materials/beyondalbum Large.jpeg"
+                                                                      alt="Iconic Beyond album cover"
+                                                                      class="w-full h-full object-cover image-loading"
+                                                                      loading="lazy"
+                                                                      onload="this.classList.remove('image-loading')">
+                                                                <div class="gallery-caption">Iconic Beyond album artwork showcasing their musical legacy</div>
+                                                            </div>
+                                                            <div class="gallery-item aspect-video bg-slate-300" role="img" aria-label="Wong Ka-hui Portrait">
+                                                                <img src="materials/wongkahui Large.jpeg"
+                                                                     alt="Portrait of Wong Ka-hui"
+                                                                     class="w-full h-full object-cover image-loading"
+                                                                     loading="lazy"
+                                                                     onload="this.classList.remove('image-loading')">
+                                                                <div class="gallery-caption">Wong Ka-hui, Beyond's legendary frontman</div>
+                                                            </div>
+                                                            <div class="gallery-item aspect-video bg-slate-300" role="img" aria-label="Wong Ka-hui Memorial">
+                                                                <img src="materials/wongkahuimemorial.jpg"
+                                                                     alt="Wong Ka-hui Memorial"
+                                                                     class="w-full h-full object-cover image-loading"
+                                                                     loading="lazy"
+                                                                     onload="this.classList.remove('image-loading')">
+                                                                <div class="gallery-caption">Memorial tribute to Wong Ka-hui, whose legacy continues to inspire</div>
+                                                            </div>
+                                                        </div>
+                                                         <div class="placeholder-note mt-8">
+                                                            Note: Replace placeholders with actual images, videos (e.g., YouTube embeds), and audio clips (e.g., SoundCloud embeds or HTML5 audio tags). Ensure proper sourcing and licensing. Consider adding captions or lightboxes for a richer experience.
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+        <section id="author-note" class="scroll-mt-20 content-section slide-in-right">
+             <div class="section-card p-8 md:p-10 lg:p-12">
+                <h2 class="section-title">Author's Note</h2>
+                <div class="text-content space-y-4">
+                    <p><strong>Project:</strong> The Legacy of Beyond: Music, Resistance, and Bicultural Identity</p>
+                    <p><strong>Author:</strong> Simon Yu</p>
+                    <p><strong>Course:</strong> 82-280/76-289: Bilingual and Bicultural Experiences in the USA</p>
+
+                    <p>This project, presented as an interactive educational website, explores the Hong Kong rock band Beyond and their enduring significance, specifically connecting their legacy to the themes of biculturalism and identity negotiation relevant to our course, "Bilingual and Bicultural Experiences in the USA." While Beyond's story is rooted in Hong Kong, their music offers a powerful case study for understanding how cultural products shape and reflect identity, particularly for diaspora communities navigating life between two cultures.</p>
+
+                    <h3 class="text-xl font-semibold pt-3 pb-1">Connection to Course Concepts:</h3>
+                    <p>The central aim is to analyze Beyond's music not just as political commentary on Hong Kong, but as a cultural artifact that resonates deeply with the <strong>bicultural experience</strong>, particularly for the Hong Kong diaspora in the United States. Key course concepts explored include:</p>
+                    <ol class="list-decimal list-inside space-y-2 pl-2">
+                        <li><strong>Bicultural Identity:</strong> Examining how Beyond's music embodies a distinct Hong Kong identity and helps Hong Kong Americans navigate their own bicultural identities in the US.</li>
+                        <li><strong>Music as a Cultural Anchor:</strong> Demonstrating how Beyond's anthems function as a vital link to homeland and heritage for the diaspora.</li>
+                        <li><strong>Language and Identity:</strong> Highlighting the role of Cantonese in the music as a touchstone for heritage language and how lyrical themes provide a vocabulary for bicultural experiences.</li>
+                        <li><strong>Resistance and Expression in Diaspora:</strong> Showing how the music is used in the US for political expression related to Hong Kong, illustrating transnational connections and the adaptive nature of meaning-making.</li>
+                    </ol>
+
+                    <h3 class="text-xl font-semibold pt-3 pb-1">Research and Methodology:</h3>
+                    <p>This project synthesizes information from academic sources, human rights reports, and qualitative lyrical analysis. The website format integrates text, (placeholder) multimedia, and interactive navigation with directional scroll-based animations. No original human subject data was collected.</p>
+
+                    <h3 class="text-xl font-semibold pt-3 pb-1">Intended Message:</h3>
+                    <p>Beyond's music speaks to universal themes that resonate within diaspora communities, serving as a compelling example of how music articulates resistance, preserves cultural memory, and aids in navigating bicultural existence, specifically within the Hong Kong American experience. Foregrounding the <strong>bicultural</strong> dimension and the <strong>US diaspora connection</strong> addresses the course objectives.</p>
+                </div>
+            </div>
+        </section>
+        <hr class="border-slate-200 my-8">
+        
+                <section id="references" class="scroll-mt-20 content-section slide-in-left">
+                     <div class="section-card p-8 md:p-10 lg:p-12">
+                        <h2 class="section-title">References</h2>
+                        <ul class="list-disc list-inside space-y-3 text-content text-base">
+                            <li>Au, T. K. F., Knightly, L. M., Jun, S. A., & Oh, J. S. (2002). Overhearing a language during childhood. <em>Psychological Science, 13</em>(3), 238-243.</li>
+                            <li>Chan, B. H. (2009). English in Hong Kong Cantopop: Language choice, code-switching and genre. <em>World Englishes, 28</em>(1), 107-129.</li>
+                            <li>Chik, A. (2010). Creative multilingualism in Hong Kong popular music. <em>World Englishes, 29</em>(4), 508-522.</li>
+                            <li>Chu, Y. W. (2017). <em>Hong Kong Cantopop: A concise history</em>. Hong Kong University Press.</li>
+                            <li>Fung, A. (2016). <em>Desiring Hong Kong, consuming South China: Transborder cultural politics, 1970-2010</em>. Hong Kong University Press.</li>
+                            <li>García, O., & Li, W. (2014). <em>Translanguaging: Language, bilingualism and education</em>. Palgrave Macmillan.</li>
+                            <li>Ho, W. C. (2015). Cantopop and protest singer: The case of Beyond. In L. Dennis & S. L. Tan (Eds.), <em>Popular music and social protest in Asia</em> (pp. 51-67). Routledge.</li>
+                            <li>Human Rights Watch. (2024). "We can't write the truth anymore": How Hong Kong's National Security Law is erasing a city's identity.</li>
+                            <li>Lee, S. J. (2013). <em>Review of research on heritage language maintenance and development</em>. The University of British Columbia.</li>
+                            <li>Li, W. (2011). Moment analysis and translanguaging space: Discursive construction of identities by multilingual Chinese youth in Britain. <em>Journal of Pragmatics, 43</em>(5), 1222-1235.</li>
+                            <li>Lin, A. M. Y., & Li, W. (2015). Translanguaging and trans-semiotizing in the Hong Kong conscious hip hop scene.</li>
+                            <li>Liu, Y., & Lin, A. M. Y. (2021). Translation and translanguaging in artistic performances in Hong Kong. In <em>The Routledge handbook of translation and the city</em>. Routledge.</li>
+                            <li>McIntyre, B. T., Cheng, C. C., & Zhang, W. (2002). The bottom line: Hong Kong's return to China and the global economy. <em>Journal of Contemporary China, 11</em>(31), 359-371.</li>
+                        </ul>
+                    </div>
+                </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 text-center p-8 mt-16">
+        <p class="font-semibold">&copy; 2025 Simon Yu - Course Project 82-280/76-289</p>
+        <p class="text-sm mt-2">Exploring the legacy of Beyond through the lens of biculturalism.</p>
+    </footer>
+
+    <script>
+        // --- Mobile Nav Toggle with Keyboard Support ---
+        const navToggle = document.getElementById('nav-toggle');
+        const navContent = document.getElementById('nav-content');
+        
+        function toggleNav() {
+            const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !isExpanded);
+            navContent.classList.toggle('hidden');
+        }
+
+        if (navToggle && navContent) {
+            // Click handler
+            navToggle.addEventListener('click', toggleNav);
+
+            // Keyboard handler
+            navToggle.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleNav();
+                }
+            });
+
+            // Close mobile nav if a link is clicked
+            const navLinks = navContent.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!navContent.classList.contains('hidden') && window.innerWidth < 768) {
+                        navContent.classList.add('hidden');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+
+            // Close mobile nav on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !navContent.classList.contains('hidden') && window.innerWidth < 768) {
+                    navContent.classList.add('hidden');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Close mobile nav when clicking outside
+            document.addEventListener('click', (e) => {
+                if (window.innerWidth < 768 &&
+                    !navContent.classList.contains('hidden') &&
+                    !navToggle.contains(e.target) &&
+                    !navContent.contains(e.target)) {
+                    navContent.classList.add('hidden');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        // --- Active Link Highlighting ---
+        const sections = document.querySelectorAll('section[id]');
+        const navLinkElements = document.querySelectorAll('nav a.nav-link');
+        const header = document.querySelector('header');
+        let headerHeight = header ? header.offsetHeight : 60;
+
+        const updateActiveLink = () => {
+            headerHeight = header ? header.offsetHeight : 60;
+            let current = '';
+            const scrollPosition = pageYOffset + headerHeight + 60; // Add more offset for earlier activation
+
+            sections.forEach(section => {
+                if (scrollPosition >= section.offsetTop) {
+                    current = section.getAttribute('id');
+                 }
+            });
+
+             // Handle edge case: If scrolled near the bottom
+            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 100) {
+                current = sections.length > 0 ? sections[sections.length - 1].getAttribute('id') : '';
+            }
+
+            navLinkElements.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+
+             // Fallback for top of page
+            if (current === '' && pageYOffset < headerHeight) {
+                 const homeLink = document.querySelector('nav a[href="#home"]');
+                 if(homeLink) {
+                     navLinkElements.forEach(l => l.classList.remove('active'));
+                     homeLink.classList.add('active');
+                 }
+            }
+        };
+
+        window.addEventListener('scroll', updateActiveLink, { passive: true }); // Use passive listener for performance
+        window.addEventListener('load', () => {
+            setTimeout(updateActiveLink, 100);
+        });
+
+
+        // --- Scroll Animations using Intersection Observer ---
+        const animatedSections = document.querySelectorAll('.content-section');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15 // Trigger animation slightly earlier
+        };
+
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Animate only once
+                }
+                // No 'else' needed if we unobserve
+            });
+        };
+
+        const heroImageContainer = document.querySelector('.hero-image-container');
+        
+                const heroObserverOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.2 // Trigger animation slightly earlier
+                };
+        
+                const heroObserverCallback = (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            heroImageContainer.classList.add('visible');
+                            observer.unobserve(heroImageContainer); // Animate only once
+                        }
+                    });
+                };
+        
+                const heroObserver = new IntersectionObserver(heroObserverCallback, heroObserverOptions);
+        
+                if (heroImageContainer) {
+                    heroObserver.observe(heroImageContainer);
+                }
+        
+                const sectionObserver = new IntersectionObserver(observerCallback, observerOptions);
+        
+                animatedSections.forEach(section => {
+                    sectionObserver.observe(section);
+                });
+
+    </script>
+
+</body>
+</html>
